@@ -1,4 +1,4 @@
-# 🧠 Venify AI Background Removal API
+# Venify AI Background Removal API
 
 A powerful and developer-friendly API to remove or edit image backgrounds in real-time using AI. Built for web apps, e-commerce, design tools, and image processing pipelines, the API supports **five background modes**: `remove`, `blur`, `color`, `gradient`, and `shadow`.
 
