@@ -73,7 +73,7 @@ Swap the background with a custom gradient.
 
 gradient_type: linear, radial, or rectangular
 
-**Example of colors and direction**
+**Example of colors and direction:**
 
 ```bash
 direction=linear
