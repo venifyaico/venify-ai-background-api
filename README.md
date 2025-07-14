@@ -18,6 +18,14 @@ The **Image Background API** is fast, accurate, and easy to integrate. Whether y
 
 ---
 
+## 🔗 Get Started
+
+You can try the API directly here:
+
+👉 RapidAPI – [Venify AI Background Removal](https://rapidapi.com/venify-venify-default/api/ai-background-removal3)
+
+---
+
 ## ✨ API Features
 
 ### 1. 🧼 `remove` — Background Removal
@@ -86,9 +94,6 @@ blur=12
 distance=15
 ```
 
-## 🔗 Get Started
-You can try the API directly here:
-👉 RapidAPI – [Venify AI Background Removal](https://rapidapi.com/venify-venify-default/api/ai-background-removal3)
 
 ## 📦 Use Cases
 E-commerce product images
