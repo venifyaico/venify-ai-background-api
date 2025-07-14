@@ -27,7 +27,7 @@ Remove the background from any image while preserving fine details. Returns a tr
 - `crop=1` to auto-crop tightly around the subject  
 - `crop=0` or omit it to keep original image dimensions
 
----
+
 **Crop= 0**
 <img width="1000" height="330" alt="venify_702215884" src="https://github.com/user-attachments/assets/a5650132-4b55-40ac-8afd-021c463028fe" />
 
@@ -44,8 +44,8 @@ blur_strength=5
 ```
 <img width="975" height="400" alt="venify_085415800" src="https://github.com/user-attachments/assets/22ad4db9-58dc-4c24-94bb-4a06de891ecf" />
 
----
-### 3. 🎨 color — Solid Color Background
+
+### 3. 🎨 `color` — Solid Color Background
 Replace the background with a hex or RGB color. Useful for brand consistency, standardization, and visual clarity.
 
 **Example:**
@@ -55,8 +55,8 @@ color=#ffffff
 ```
 <img width="952" height="391" alt="venify_521500411" src="https://github.com/user-attachments/assets/b9c56c3b-5c7f-45da-8be8-e7a218fb1cc6" />
 
----
-### 4. 🌈 gradient — Gradient Background
+
+### 4. 🌈 `gradient` — Gradient Background
 Swap the background with a custom gradient.
 
 **Supports:**
@@ -71,9 +71,9 @@ colors=#ff0000,#00ffcc
 ```
 <img width="840" height="398" alt="venify_000485481" src="https://github.com/user-attachments/assets/41c5e448-aa15-4b56-b254-0a0a1b33a6c4" />
 
----
 
-### 5. 🕶️ shadow — Add Realistic Shadow
+
+### 5. 🕶️ `shadow` — Add Realistic Shadow
 Applies a natural-looking drop shadow under the subject, making the image pop.
 
 **Default Variables:**
