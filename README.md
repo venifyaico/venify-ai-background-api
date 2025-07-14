@@ -1,3 +1,5 @@
+# 🧠 Venify AI Background Removal API
+
 A powerful and developer-friendly API to remove or edit image backgrounds in real-time using AI. Built for web apps, e-commerce, design tools, and image processing pipelines, the API supports **five background modes**: `remove`, `blur`, `color`, `gradient`, and `shadow`.
 
 ---
@@ -83,3 +85,22 @@ opacity=0.5
 blur=12
 distance=15
 ```
+
+## 🔗 Get Started
+You can try the API directly here:
+👉 RapidAPI – [Venify AI Background Removal](https://rapidapi.com/venify-venify-default/api/ai-background-removal3)
+
+## 📦 Use Cases
+E-commerce product images
+
+Profile picture optimization
+
+Virtual try-on tools
+
+Creative and design apps
+
+AR/VR and smart image pipelines
+
+
+## 📄 License
+This API is provided by [Venify on RapidAPI](https://rapidapi.com/venify-venify-default/api/ai-background-removal3). Please refer to their usage terms, pricing, and limits.
