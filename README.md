@@ -54,14 +54,15 @@ curl --request POST
 	--form 'image=image.jpg' 
 	--form crop=0
  ```
+<br/>
 
 ### 2. 🌫️ `blur` — Blur Background
 Applies a natural background blur, ideal for profile pictures and product focus.
 blur_strength from 1 (softest) to 10 (strongest)
 
-**Default Variable** ➡️ blur_strength=7
 
 <img width="975" height="400" alt="venify_085415800" src="https://github.com/user-attachments/assets/22ad4db9-58dc-4c24-94bb-4a06de891ecf" />
+
 
 **Code Snippets**
 ```shell
@@ -73,11 +74,11 @@ curl --request POST
 	--form 'image=image.jpg' 
 	--form blur_strength=7
 ```
+<br/>
 
 ### 3. 🎨 `color` — Solid Color Background
 Replace the background with a hex or RGB color. Useful for brand consistency, standardization, and visual clarity.
 
-**Default Variable** ➡️ color=#ff0000
 
 <img width="952" height="391" alt="venify_521500411" src="https://github.com/user-attachments/assets/b9c56c3b-5c7f-45da-8be8-e7a218fb1cc6" />
 
@@ -91,18 +92,13 @@ curl --request POST
 	--form 'image=image.jpg' 
 	--form 'color=#ff0000'
 ```
+<br/>
 
 ### 4. 🌈 `gradient` — Gradient Background
 Swap the background with a custom gradient.
 
-Supports three different gradient types: linear, radial, or rectangular
+Supports three different gradient types: **linear, radial, or rectangular**
 
-
-**Default Variables** 🔽
-
-direction=rect 
-
-colors="#ff0000", "#0000ff"
 
 <img width="840" height="398" alt="venify_000485481" src="https://github.com/user-attachments/assets/41c5e448-aa15-4b56-b254-0a0a1b33a6c4" />
 
@@ -117,24 +113,15 @@ curl --request POST
 	--form 'colors=["#ff0000", "#0000ff"]' 
 	--form direction=rect
 ```
+<br/>
 
 ### 5. 🕶️ `shadow` — Add Realistic Shadow
 Applies a natural-looking drop shadow under the subject, making the image pop.
-Users can choose one of these 25 different styles
+
+Users can choose from these 25 different styles:
 
 ["outer-tl" / "outer-t" / "outer-tr" / "outer-l" / "outer-center" / "outer-r" / "outer-bl" / "outer-b" / "outer-br" / "inner-tl" / "inner-t" / "inner-tr" / "inner-l" / "inner-center" / "inner-r" / "inner-bl" / "inner-b" / "inner-br" / "persp-br" / "persp-bl" / "persp-tr" / "persp-tl" / "persp-right" / "persp-left" / "persp-below"]
 
-**Default Variables** 🔽
-
-style= "outer-br"
-
-shadow_color=#ffffff
-
-opacity=0.5
-
-blur=12
-
-distance=50
 
 
 **Code Snippets**
