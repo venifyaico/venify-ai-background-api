@@ -120,8 +120,10 @@ Applies a natural-looking drop shadow under the subject, making the image pop.
 
 Users can choose from these 25 different styles:
 
-["outer-tl" / "outer-t" / "outer-tr" / "outer-l" / "outer-center" / "outer-r" / "outer-bl" / "outer-b" / "outer-br" / "inner-tl" / "inner-t" / "inner-tr" / "inner-l" / "inner-center" / "inner-r" / "inner-bl" / "inner-b" / "inner-br" / "persp-br" / "persp-bl" / "persp-tr" / "persp-tl" / "persp-right" / "persp-left" / "persp-below"]
+**["outer-tl" / "outer-t" / "outer-tr" / "outer-l" / "outer-center" / "outer-r" / "outer-bl" / "outer-b" / "outer-br" / "inner-tl" / "inner-t" / "inner-tr" / "inner-l" / "inner-center" / "inner-r" / "inner-bl" / "inner-b" / "inner-br" / "persp-br" / "persp-bl" / "persp-tr" / "persp-tl" / "persp-right" / "persp-left" / "persp-below"]**
 
+
+<img width="3413" height="2016" alt="Copy of Untitled545" src="https://github.com/user-attachments/assets/f500ab05-ccdf-4022-8722-db056dc25e43" />
 
 
 **Code Snippets**
