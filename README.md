@@ -44,54 +44,112 @@ Remove the background from any image while preserving fine details. Returns a tr
 **Crop= 1**
 <img width="1000" height="352" alt="venify_802505541" src="https://github.com/user-attachments/assets/6677925f-dd38-4467-a1c4-52e788bf2e4f" />
 
+**Code Snippets**
+```shell
+curl --request POST 
+	--url https://ai-background-removal3.p.rapidapi.com/api/v1/remove_background 
+	--header 'Content-Type: multipart/form-data' 
+	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
+	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--form 'image=image.jpg' 
+	--form crop=0
+ ```
+
 ### 2. 🌫️ `blur` — Blur Background
 Applies a natural background blur, ideal for profile pictures and product focus.
-blur_strength from 1 (softest) to 10 (strongest), **Default is 7**
+blur_strength from 1 (softest) to 10 (strongest)
 
-**Example:**  
-```bash
-blur_strength=5
-```
+**Default Variable** ➡️ blur_strength=7
+
 <img width="975" height="400" alt="venify_085415800" src="https://github.com/user-attachments/assets/22ad4db9-58dc-4c24-94bb-4a06de891ecf" />
 
+**Code Snippets**
+```shell
+curl --request POST 
+	--url https://ai-background-removal3.p.rapidapi.com/api/v1/blur_background 
+	--header 'Content-Type: multipart/form-data' 
+	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
+	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--form 'image=image.jpg' 
+	--form blur_strength=7
+```
 
 ### 3. 🎨 `color` — Solid Color Background
 Replace the background with a hex or RGB color. Useful for brand consistency, standardization, and visual clarity.
 
-**Example:**
+**Default Variable** ➡️ color=#ff0000
 
-```bash
-color=#ffffff
-```
 <img width="952" height="391" alt="venify_521500411" src="https://github.com/user-attachments/assets/b9c56c3b-5c7f-45da-8be8-e7a218fb1cc6" />
 
+**Code Snippets**
+```shell
+curl --request POST 
+	--url https://ai-background-removal3.p.rapidapi.com/api/v1/color_background 
+	--header 'Content-Type: multipart/form-data' 
+	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
+	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--form 'image=image.jpg' 
+	--form 'color=#ff0000'
+```
 
 ### 4. 🌈 `gradient` — Gradient Background
 Swap the background with a custom gradient.
 
-**Supports:**
+Supports three different gradient types: linear, radial, or rectangular
 
-gradient_type: linear, radial, or rectangular
 
-**Example of colors and direction:**
+**Default Variables** 🔽
 
-```bash
-direction=linear
-colors=#ff0000,#00ffcc
-```
+direction=rect 
+
+colors="#ff0000", "#0000ff"
+
 <img width="840" height="398" alt="venify_000485481" src="https://github.com/user-attachments/assets/41c5e448-aa15-4b56-b254-0a0a1b33a6c4" />
 
-
+**Code Snippets**
+```shell
+curl --request POST 
+	--url https://ai-background-removal3.p.rapidapi.com/api/v1/gradient_background 
+	--header 'Content-Type: multipart/form-data' 
+	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
+	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--form 'image=image.jpg' 
+	--form 'colors=["#ff0000", "#0000ff"]' 
+	--form direction=rect
+```
 
 ### 5. 🕶️ `shadow` — Add Realistic Shadow
 Applies a natural-looking drop shadow under the subject, making the image pop.
+Users can choose one of these 25 different styles
 
-**Default Variables:**
-```bash
+["outer-tl" / "outer-t" / "outer-tr" / "outer-l" / "outer-center" / "outer-r" / "outer-bl" / "outer-b" / "outer-br" / "inner-tl" / "inner-t" / "inner-tr" / "inner-l" / "inner-center" / "inner-r" / "inner-bl" / "inner-b" / "inner-br" / "persp-br" / "persp-bl" / "persp-tr" / "persp-tl" / "persp-right" / "persp-left" / "persp-below"]
+
+**Default Variables** 🔽
+
+style= "outer-br"
+
 shadow_color=#ffffff
+
 opacity=0.5
+
 blur=12
-distance=15
+
+distance=50
+
+
+**Code Snippets**
+```shell
+curl --request POST 
+	--url https://ai-background-removal3.p.rapidapi.com/api/v1/shadow_background 
+	--header 'Content-Type: multipart/form-data' 
+	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
+	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--form 'image=image.jpg' 
+	--form style=outer-br 
+	--form 'shadow_color=#ffffff' 
+	--form opacity=0.5 
+	--form blur=12 
+	--form distance=50
 ```
 
 
