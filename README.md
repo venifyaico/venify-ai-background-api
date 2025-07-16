@@ -27,8 +27,8 @@ You can try the API directly here:
 
 👉 RapidAPI – [Venify AI Background Removal](https://rapidapi.com/venify-venify-default/api/ai-background-removal3)
 
----
-## Postman Collection: Venify AI Background Removal API
+
+### Postman Collection
 This Postman collection includes ready-to-use requests for all five background editing modes supported by the Venify AI Background Removal API, including:
 
 - `remove` – Transparent background
@@ -37,13 +37,13 @@ This Postman collection includes ready-to-use requests for all five background e
 - `gradient` – Linear, radial, or rectangle gradients
 - `shadow` – Drop shadow background
 
-### How to Use
+ #### How to Use
 
-- Download [the collection JSON](./Venify_Background_Removal_API.postman_collection.json) or clone this repo
-- Open Postman and click “Import”.
-- Select the file: **Venify_Background_Removal_API.postman_collection.json**
-- Add your RapidAPI key in the headers or use an environment variable.
-- Start sending requests and previewing image responses.
+1. Download [the collection JSON](./Venify_Background_Removal_API.postman_collection.json) or clone this repo
+2. Open Postman and click “Import”.
+3. Select the file: **Venify_Background_Removal_API.postman_collection.json**
+4. Add your RapidAPI key in the headers or use an environment variable.
+5. Start sending requests and previewing image responses.
 
 ---
 
