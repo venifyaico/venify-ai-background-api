@@ -71,7 +71,7 @@ curl --request POST
 	--url https://ai-background-removal3.p.rapidapi.com/api/v1/remove_background 
 	--header 'Content-Type: multipart/form-data' 
 	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
-	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY' 
 	--form 'image=image.jpg' 
 	--form crop=0
  ```
@@ -92,7 +92,7 @@ curl --request POST
 	--url https://ai-background-removal3.p.rapidapi.com/api/v1/blur_background 
 	--header 'Content-Type: multipart/form-data' 
 	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
-	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY' 
 	--form 'image=image.jpg' 
 	--form blur_strength=7
 ```
@@ -110,7 +110,7 @@ curl --request POST
 	--url https://ai-background-removal3.p.rapidapi.com/api/v1/color_background 
 	--header 'Content-Type: multipart/form-data' 
 	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
-	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY' 
 	--form 'image=image.jpg' 
 	--form 'color=#ff0000'
 ```
@@ -130,7 +130,7 @@ curl --request POST
 	--url https://ai-background-removal3.p.rapidapi.com/api/v1/gradient_background 
 	--header 'Content-Type: multipart/form-data' 
 	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
-	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY' 
 	--form 'image=image.jpg' 
 	--form 'colors=["#ff0000", "#0000ff"]' 
 	--form direction=rect
@@ -154,7 +154,7 @@ curl --request POST
 	--url https://ai-background-removal3.p.rapidapi.com/api/v1/shadow_background 
 	--header 'Content-Type: multipart/form-data' 
 	--header 'x-rapidapi-host: ai-background-removal3.p.rapidapi.com' 
-	--header 'x-rapidapi-key: c4aa9d8050msh393f2cffed2b882p1bcae1jsnaccfb235705e' 
+	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY' 
 	--form 'image=image.jpg' 
 	--form style=outer-br 
 	--form 'shadow_color=#ffffff' 
