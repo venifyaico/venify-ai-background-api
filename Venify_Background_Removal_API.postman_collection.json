@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "966ef125-9bc8-4a96-a80f-407af55a88d0",
+		"name": "Venify_Background_Removal_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "background_removal",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-host",
+						"value": "ai-background-removal3.p.rapidapi.com",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "crop",
+							"value": "0",
+							"description": "crop=1 to auto-crop tightly around the subject\ncrop=0 or omit it to keep original image dimensions",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "base64 format",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ai-background-removal3.p.rapidapi.com/api/v1/remove_background",
+					"protocol": "https",
+					"host": [
+						"ai-background-removal3",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"remove_background"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blur_background",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-host",
+						"value": "ai-background-removal3.p.rapidapi.com",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "blur_strength",
+							"value": "7",
+							"description": "blur_strength from 1 (softest) to 10 (strongest) default=7",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "base64 format",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ai-background-removal3.p.rapidapi.com/api/v1/blur_background",
+					"protocol": "https",
+					"host": [
+						"ai-background-removal3",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"blur_background"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "color_background",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-host",
+						"value": "ai-background-removal3.p.rapidapi.com",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "color",
+							"value": "#ff0000",
+							"description": "Set color Hex",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "base64 format",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ai-background-removal3.p.rapidapi.com/api/v1/color_background",
+					"protocol": "https",
+					"host": [
+						"ai-background-removal3",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"color_background"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gradient_background",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "ai-background-removal3.p.rapidapi.com",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "colors",
+							"value": "[\"#ff00ff\", \"#00ffff\"]",
+							"description": "List of colors",
+							"type": "text"
+						},
+						{
+							"key": "direction",
+							"value": "rect",
+							"description": "Supports three different gradient types: linear, radial, or rect",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "base64 format",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ai-background-removal3.p.rapidapi.com/api/v1/gradient_background",
+					"protocol": "https",
+					"host": [
+						"ai-background-removal3",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"gradient_background"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shadow_background",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "ai-background-removal3.p.rapidapi.com",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "style",
+							"value": "outer-br",
+							"description": "List of Styles: [\"outer-tl\" / \"outer-t\" / \"outer-tr\" / \"outer-l\" / \"outer-center\" / \"outer-r\" / \"outer-bl\" / \"outer-b\" / \"outer-br\" / \"inner-tl\" / \"inner-t\" / \"inner-tr\" / \"inner-l\" / \"inner-center\" / \"inner-r\" / \"inner-bl\" / \"inner-b\" / \"inner-br\" / \"persp-br\" / \"persp-bl\" / \"persp-tr\" / \"persp-tl\" / \"persp-right\" / \"persp-left\" / \"persp-below\"]",
+							"type": "text"
+						},
+						{
+							"key": "shadow_color",
+							"value": "#ffffff",
+							"description": "Default= #ffffff",
+							"type": "text"
+						},
+						{
+							"key": "opacity",
+							"value": "0.5",
+							"description": "Range: 0.0 (fully transparent) to 1.0 (fully opaque) \nTypical Values: 0.3 → light shadow,  0.5 → normal shadow (default), 0.8 → strong, dark shadow",
+							"type": "text"
+						},
+						{
+							"key": "blur",
+							"value": "12",
+							"description": "Range: 0 (no blur) and up\nTypical Values:\n0 → sharp edges, no blur\n5–10 → soft shadow\n12–20 → smoother, larger spread (default = 12)",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "50",
+							"description": "Range: 0 and up \nTypical Values:\n0 → shadow directly behind the object (no offset)\n5–15 → natural-looking drop shadow\n20+ → dramatic or deeper shadows\nDefault=50",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image",
+							"value": "",
+							"description": "base64 format",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ai-background-removal3.p.rapidapi.com/api/v1/shadow_background",
+					"protocol": "https",
+					"host": [
+						"ai-background-removal3",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"shadow_background"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
