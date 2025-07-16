@@ -3,34 +3,53 @@
 A powerful and developer-friendly API to remove or edit image backgrounds in real-time using AI. Built for web apps, e-commerce, design tools, and image processing pipelines, the API supports **five background modes**: `remove`, `blur`, `color`, `gradient`, and `shadow`.
 
 ---
-![photo_6030616121104778733_y](https://github.com/user-attachments/assets/82a3f414-46e9-4517-ad67-7849538740fa)
+
+![photo_6030874124085216505_y (1)](https://github.com/user-attachments/assets/50d0a423-b629-4546-b208-5ea742df7af2)
 
 
-## 🚀 Why Use This API?
+## Why Use This API?
 
 The **Image Background API** is fast, accurate, and easy to integrate. Whether you're building a photo editor, a virtual fitting room, or a product uploader, this tool helps you produce pixel-perfect results in milliseconds.
 
-### 🔑 Key Benefits:
-- ⚡ Real-time performance
-- 🧠 Over 95% IOU accuracy with AI segmentation
-- 🖼️ Handles complex edges like hair, hands, transparent zones
-- 📏 Smart cropping with `crop=1`
-- 🔐 GDPR-compliant (no image storage)
-- 💸 Affordable for startups, scalable for enterprises
+### Key Benefits:
+- Real-time performance
+- Over 95% IOU accuracy with AI segmentation
+- Handles complex edges like hair, hands, transparent zones
+- Smart cropping with `crop=1`
+- GDPR-compliant (no image storage)
+- Affordable for startups, scalable for enterprises
 
 ---
 
-## 🔗 Get Started
+## Get Started
 
 You can try the API directly here:
 
 👉 RapidAPI – [Venify AI Background Removal](https://rapidapi.com/venify-venify-default/api/ai-background-removal3)
 
 ---
+## Postman Collection: Venify AI Background Removal API
+This Postman collection includes ready-to-use requests for all five background editing modes supported by the Venify AI Background Removal API, including:
 
-## ✨ API Features
+- `remove` – Transparent background
+- `blur` – Adjustable blur strength
+- `color` – Solid background color
+- `gradient` – Linear, radial, or rectangle gradients
+- `shadow` – Drop shadow background
 
-### 1. 🧼 `remove` — Background Removal
+### How to Use
+
+- Download the collection JSON or clone this repo
+- Open Postman and click “Import”.
+- Select the file: Venify_Background_Removal_API.postman_collection.json
+- Add your RapidAPI key in the headers or use an environment variable.
+- Start sending requests and previewing image responses.
+
+---
+
+## API Features
+
+### 1. `Remove` — Background Removal
 
 
 Remove the background from any image while preserving fine details. Returns a transparent PNG.
@@ -58,7 +77,7 @@ curl --request POST
  ```
 <br/>
 
-### 2. 🌫️ `blur` — Blur Background
+### 2. `Blur` — Blur Background
 Applies a natural background blur, ideal for profile pictures and product focus.
 blur_strength from 1 (softest) to 10 (strongest)
 
@@ -78,7 +97,7 @@ curl --request POST
 ```
 <br/>
 
-### 3. 🎨 `color` — Solid Color Background
+### 3. `Color` — Solid Color Background
 Replace the background with a hex or RGB color. Useful for brand consistency, standardization, and visual clarity.
 
 
@@ -96,7 +115,7 @@ curl --request POST
 ```
 <br/>
 
-### 4. 🌈 `gradient` — Gradient Background
+### 4. `Gradient` — Gradient Background
 Swap the background with a custom gradient.
 
 Supports three different gradient types: **linear, radial, or rectangular**
@@ -117,7 +136,7 @@ curl --request POST
 ```
 <br/>
 
-### 5. 🕶️ `shadow` — Add Realistic Shadow
+### 5. `Shadow` — Add Realistic Shadow
 Applies a natural-looking drop shadow under the subject, making the image pop.
 
 Users can choose from these 25 different styles:
@@ -144,7 +163,7 @@ curl --request POST
 ```
 
 
-## 📦 Use Cases
+##  Use Cases
 E-commerce product images
 
 Profile picture optimization
@@ -156,5 +175,5 @@ Creative and design apps
 AR/VR and smart image pipelines
 
 
-## 📄 License
+## License
 This API is provided by [Venify on RapidAPI](https://rapidapi.com/venify-venify-default/api/ai-background-removal3). Please refer to their usage terms, pricing, and limits.
