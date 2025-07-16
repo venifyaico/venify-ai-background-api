@@ -4,7 +4,8 @@ A powerful and developer-friendly API to remove or edit image backgrounds in rea
 
 ---
 
-![photo_6030874124085216505_y (1)](https://github.com/user-attachments/assets/50d0a423-b629-4546-b208-5ea742df7af2)
+<img width="3125" height="1313" alt="Add a subheading25" src="https://github.com/user-attachments/assets/91a520c8-fb86-4fac-a417-5211444593af" />
+
 
 
 ## Why Use This API?
