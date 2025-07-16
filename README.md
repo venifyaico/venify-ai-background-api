@@ -39,7 +39,7 @@ This Postman collection includes ready-to-use requests for all five background e
 
 ### How to Use
 
-- Download the collection JSON or clone this repo
+- Download [the collection JSON](./Venify_Background_Removal_API.postman_collection.json) or clone this repo
 - Open Postman and click “Import”.
 - Select the file: Venify_Background_Removal_API.postman_collection.json
 - Add your RapidAPI key in the headers or use an environment variable.
