@@ -79,6 +79,7 @@ curl --request POST
 
 ### 2. `Blur` — Blur Background
 Applies a natural background blur, ideal for profile pictures and product focus.
+
 blur_strength from 1 (softest) to 10 (strongest)
 
 
@@ -164,15 +165,11 @@ curl --request POST
 
 
 ##  Use Cases
-E-commerce product images
-
-Profile picture optimization
-
-Virtual try-on tools
-
-Creative and design apps
-
-AR/VR and smart image pipelines
+- E-commerce product images
+- Profile picture optimization
+- Virtual try-on tools
+- Creative and design apps
+- AR/VR and smart image pipelines
 
 
 ## License
